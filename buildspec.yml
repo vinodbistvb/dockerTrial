@@ -5,7 +5,6 @@ phases:
     commands:
       - echo Installing Dependencies
       - npm install
-      - ${aws ecr get-login --no-included-email --region $AWS_DEFAULT_REGION}
   build:
     commands:
       - echo building docker image
