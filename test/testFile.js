@@ -6,6 +6,6 @@ describe('POST Groups (+) - Create Groups With Header Fields *end-to-end* *docke
 
     it('C38812: Internal > Create Group > Validate SUCCESS message for group_name without path but with valid parent_group_id', async function () {
     
-        assert.equal(201, 201);    
+        assert.equal(201, 201);      
     })
 })
