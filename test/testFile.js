@@ -1,4 +1,4 @@
-require('mocha')
+require('jest')
 
 var assert = require('chai').assert
 
