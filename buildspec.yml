@@ -26,8 +26,8 @@ phases:
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
       - echo Writing image definitions file...
       - printf '[{"name":"hello-world","imageUri":"%s"}]' $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG > imagedefinitions.json
-      - sed -i -e "s|CONTAINER_NAME|$ContainerName|g" imagedefinitions.json
-      - sed -i -e "s|$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG|$ImageURI|g" imagedefinitions.json
+      - sed -i -e "s|CONTAINER_NAME|$CONTAINER_NAME|g" imagedefinitions.json
+      - sed -i -e "s|IMAGE_URI|$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG|g" imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
