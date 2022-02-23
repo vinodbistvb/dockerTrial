@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Core Api Automation",
   "scripts": {
+    "test": "jest"
     "test_dev": "cross-env NODE_ENV=dev NODE_TLS_REJECT_UNAUTHORIZED=0 npm run end-to-end",
     "test_qa_smoke": "cross-env NODE_ENV=qa NODE_TLS_REJECT_UNAUTHORIZED=0 npm run smoke",
     "test_qa": "cross-env NODE_ENV=qa NODE_TLS_REJECT_UNAUTHORIZED=0 npm run end-to-end",
@@ -57,6 +58,7 @@
     "url-parse": "^1.5.3",
     "uuid": "^8.3.2",
     "winston": "^3.3.3",
-    "winston-cfg": "^1.0.12"
+    "winston-cfg": "^1.0.12",
+    "jest-junit": "^13.0.0"
   }
 }
