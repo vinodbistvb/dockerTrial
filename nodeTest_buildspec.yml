@@ -11,13 +11,10 @@ phases:
   build:
     commands:
       - echo test started on `date` 
-      - npm run docker-test –junitxml=reports/unit.xml
-  post_build:
-    commands:
-      - echo report generated
-reports:
-     TestNodeJs:
-        files:
-          - "**/*"
-        base-directory: "reports"
-
+      - npm test
+  reports:
+    jest_reports:
+            files: 
+              - "**/*"
+            file-format: JUNITXML
+            base-directory: "reports"
