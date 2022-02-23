@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+      runtime-versions:
+        node: 16
+  pre_build:
+    commands:
+      - echo installing packages
+      - npm install
+  build:
+    commands:
+      - echo test started on `date` 
+      - npm run docker-test
+  post_build:
+    commands:
+      - echo report generated
+reports:
+     TestNodeJs:
+        files:
+          - "**/*"
+        base-directory: "reports"
+
