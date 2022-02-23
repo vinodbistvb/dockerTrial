@@ -14,9 +14,9 @@ phases:
       - npm test
       
       
-  reports:
-    jest_reports:
-            files: 
-              - "**/*"
-            file-format: JUNITXML
-            base-directory: "reports"
+reports:
+  jest_reports:
+          files: 
+            - "**/*"
+          file-format: JUNITXML
+          base-directory: "reports"
