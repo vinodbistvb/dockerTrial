@@ -59,6 +59,7 @@
     "uuid": "^8.3.2",
     "winston": "^3.3.3",
     "winston-cfg": "^1.0.12",
-    "jest-junit": "^13.0.0"
+    "jest-junit": "^13.0.0",
+    "jest": "^27.5.1"
   }
 }
