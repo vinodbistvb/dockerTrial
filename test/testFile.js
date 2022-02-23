@@ -9,6 +9,4 @@ describe('POST Groups (+) - Create Groups With Header Fields *end-to-end* *docke
         assert.equal(201, 201)
         
     })
-
-
 })
