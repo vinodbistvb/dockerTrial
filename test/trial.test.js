@@ -10,5 +10,4 @@ describe('POST Groups (+) - Create Groups With Header Fields *end-to-end* *docke
         
     })
 
-
 })
