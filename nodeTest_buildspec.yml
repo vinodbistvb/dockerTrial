@@ -12,6 +12,8 @@ phases:
     commands:
       - echo test started on `date` 
       - npm test
+      
+      
   reports:
     jest_reports:
             files: 
