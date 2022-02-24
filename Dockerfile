@@ -27,4 +27,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["npm","run","docker-test"]
+CMD ["npm","test"]
