@@ -8,16 +8,16 @@ describe('Running a dummy test set one', function () {
         assert.equal(201, 201)  
     })
 
-    it('should fail - Dummy test Two in set one', async function () {
-        assert.equal(201, 200)  
-    })
+//     it('should fail - Dummy test Two in set one', async function () {
+//         assert.equal(201, 200)  
+//     })
 })
 
 describe('Running a dummy test set Two', function () {
 
-    it('should fail - Dummy test one in set two', async function () {
-        assert.equal(201, 200)  
-    })
+//     it('should fail - Dummy test one in set two', async function () {
+//         assert.equal(201, 200)  
+//     })
 
     it('Dummy test Two in set two', async function () {
         assert.equal(201, 201)  
