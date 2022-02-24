@@ -2,12 +2,24 @@ require('jest')
 
 var assert = require('chai').assert
 
-describe('POST Groups (+) - Create Groups With Header Fields *end-to-end* *docker-test*', function () {
+describe('Running a dummy test set one', function () {
 
-    it('C38812: Internal > Create Group > Validate SUCCESS message for group_name without path but with valid parent_group_id', async function () {
-
-        assert.equal(201, 201)
-        
+    it('Dummy test one in set one', async function () {
+        assert.equal(201, 201)  
     })
 
+    it('should fail - Dummy test Two in set one', async function () {
+        assert.equal(201, 200)  
+    })
+})
+
+describe('Running a dummy test set Two', function () {
+
+    it('should fail - Dummy test one in set two', async function () {
+        assert.equal(201, 200)  
+    })
+
+    it('Dummy test Two in set two', async function () {
+        assert.equal(201, 201)  
+    })
 })
