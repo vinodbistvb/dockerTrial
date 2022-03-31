@@ -29,6 +29,7 @@
   "author": "Avijit Sannigrahi",
   "license": "ISC",
   "dependencies": {
+     "mocha-junit-reporter": "^2.0.2",
     "bluebird": "^3.7.2",
     "chai": "^4.3.4",
     "chai-uuid": "^1.0.6",
