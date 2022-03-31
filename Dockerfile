@@ -27,4 +27,6 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["npm","test"]
+ENTRYPOINT ["/bin/sh"]
+
+# CMD ["npm","test"]
