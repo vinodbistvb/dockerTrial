@@ -24,7 +24,7 @@
     "regression": "mocha --recursive --timeout 999999 --fgrep *regression* --reporter mochawesome --reporter-options reportDir=./reports,reportFilename=coreAPI-report",
     "sso": "mocha --recursive --timeout 999999 --fgrep *sso* --reporter mochawesome --reporter-options reportDir=./reports,reportFilename=coreAPI-report",
     "end-to-end": "mocha --recursive --timeout 999999 --fgrep *end-to-end* --reporter mochawesome --reporter-options reportDir=./reports,reportFilename=coreAPI-report",
-    "docker-test": "cross-env NODE_ENV=qa NODE_TLS_REJECT_UNAUTHORIZED=0  mocha --recursive --timeout 999999 --fgrep *docker-test* --reporter mochawesome --reporter-options reportDir=./reports,reportFilename=coreAPI-report"
+    "docker-test": "cross-env NODE_ENV=qa NODE_TLS_REJECT_UNAUTHORIZED=0  mocha --recursive --timeout 999999 --fgrep *docker-test* --reporter mocha-junit-reporter --reporter-options mochaFile=./reports/file.xml"
   },
   "author": "Avijit Sannigrahi",
   "license": "ISC",
