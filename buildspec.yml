@@ -17,6 +17,6 @@ phases:
 reports:
   jest_reports:
           files: 
-            - "**/*.json"
-          file-format: CUCUMBERJSON
+            - "**/*"
+          file-format: JUNITXML
           base-directory: "reports"
