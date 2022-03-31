@@ -7,10 +7,13 @@ env:
     CONTAINER_NAME: "dockertrial"
     IMAGE_REPO_NAME: "dockertrial"
     IMAGE_TAG: "latest"
+    dockerhub_username: "vinodbidtvb"
+    dockerhub_password: "NewCompany@2022"
 
 phases:
   pre_build:
     commands:
+      - docker login -u $dockerhub_username -p $dockerhub_password
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
   build:
